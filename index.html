@@ -311,7 +311,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 10px;
   color: var(--cream);
 }
-.csb-brand .logo-svg { width: 44px; height: 44px; flex-shrink: 0; }
+.csb-brand .logo-svg { width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; object-fit: cover; }
 .csb-brand .brand-text {
   font-family: var(--font-display);
   font-weight: 800;
@@ -676,30 +676,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <nav class="csb-navbar">
   <div class="nav-inner">
     <a href="#home" class="csb-brand" aria-label="Clark's Crispy Sisig Bagnet — Home">
-      <!-- SVG LOGO: pig silhouette on a sizzling plate, with "CSB" initials.
-           Pure SVG so it stays crisp at any size and needs no image file. -->
-      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CSB logo">
-        <circle cx="50" cy="50" r="48" fill="#C62828"/>
-        <circle cx="50" cy="50" r="48" fill="none" stroke="#F57C00" stroke-width="3"/>
-        <!-- sizzling plate ellipse -->
-        <ellipse cx="50" cy="66" rx="30" ry="7" fill="#3E2723" opacity="0.55"/>
-        <!-- steam / sizzle lines -->
-        <path d="M30 50 Q34 44 30 38 Q26 32 30 26" stroke="#FFF8E1" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.85"/>
-        <path d="M70 50 Q66 44 70 38 Q74 32 70 26" stroke="#FFF8E1" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.85"/>
-        <!-- pig head -->
-        <ellipse cx="50" cy="46" rx="20" ry="17" fill="#FFF8E1"/>
-        <ellipse cx="40" cy="32" rx="6" ry="7" fill="#FFF8E1"/>
-        <ellipse cx="60" cy="32" rx="6" ry="7" fill="#FFF8E1"/>
-        <ellipse cx="40" cy="33" rx="3" ry="3.5" fill="#C62828"/>
-        <ellipse cx="60" cy="33" rx="3" ry="3.5" fill="#C62828"/>
-        <ellipse cx="50" cy="49" rx="9" ry="7" fill="#F57C00"/>
-        <circle cx="46" cy="49" r="1.6" fill="#3E2723"/>
-        <circle cx="54" cy="49" r="1.6" fill="#3E2723"/>
-        <circle cx="42" cy="40" r="2" fill="#3E2723"/>
-        <circle cx="58" cy="40" r="2" fill="#3E2723"/>
-        <!-- CSB initials banner -->
-        <text x="50" y="72" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="11" fill="#FFF8E1">CSB</text>
-      </svg>
+      <!-- LOGO: real brand image (replaces the original SVG mark) -->
+      <img class="logo-svg" src="sisiglogo.jpg" alt="Clark's Crispy Sisig Bagnet logo">
       <span class="brand-text">
         Clark's Crispy<br>Sisig Bagnet
         <span>Tanay, Rizal</span>
