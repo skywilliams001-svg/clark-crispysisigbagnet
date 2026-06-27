@@ -3,8 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clark's Crispy Sisig Bagnet | Tanay, Rizal</title>
-<meta name="description" content="Clark's Crispy Sisig Bagnet — the best tasting sisig in town. Find us in Tanay, Rizal, Mon–Sun 4PM–10PM.">
+
+<!-- ============================================================
+     SEO: Title & meta description.
+     Keep title under ~60 characters, description under ~155 —
+     longer than that and Google truncates them in search results.
+     Both include "Tanay" / "Rizal" / "sisig" since those are the
+     terms people actually search for.
+     ============================================================ -->
+<title>Clark's Crispy Sisig Bagnet | Best Sisig & Bagnet in Tanay, Rizal</title>
+<meta name="description" content="Crispy sisig and bagnet in Tanay, Rizal. Find us at Sitio Tulay (Mon–Fri) or Samploc Overlooking (Sat–Sun), 4PM–10PM daily. Dine in, takeout, or order ahead.">
+
+<!-- ============================================================
+     SEO: Canonical URL & robots.
+     IMPORTANT: replace the URL below with your actual GitHub Pages
+     URL, e.g. https://yourusername.github.io/repo-name/
+     This tells Google "this is the one true address for this page"
+     and explicitly allows indexing.
+     ============================================================ -->
+<link rel="canonical" href="https://skywilliams001-svg.github.io/clark-crispysisigbagnet/">
+<meta name="robots" content="index, follow">
+
+<!-- ============================================================
+     SEO: Open Graph & Twitter Card tags.
+     These control how the page looks when shared on Facebook,
+     Messenger, and Twitter/X — very relevant in PH since most
+     people will discover this via a shared FB link, not Google.
+     Replace the URLs below to match your canonical URL and a real
+     photo once you have one (1200x630px works best for og:image).
+     ============================================================ -->
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Clark's Crispy Sisig Bagnet | Tanay, Rizal">
+<meta property="og:description" content="The best tasting sisig in town. Find us in Tanay, Rizal — Mon–Fri at Sitio Tulay, Sat–Sun at Samploc Overlooking. Open 4PM–10PM daily.">
+<meta property="og:url" content="https://skywilliams001-svg.github.io/clark-crispysisigbagnet/">
+<meta property="og:image" content="https://skywilliams001-svg.github.io/clark-crispysisigbagnet/images/hero-bg.jpg">
+<meta property="og:locale" content="en_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clark's Crispy Sisig Bagnet | Tanay, Rizal">
+<meta name="twitter:description" content="Crispy sisig and bagnet in Tanay, Rizal. Open daily 4PM–10PM.">
+<meta name="twitter:image" content="https://skywilliams001-svg.github.io/clark-crispysisigbagnet/images/hero-bg.jpg">
+
+<!-- ============================================================
+     SEO: LocalBusiness structured data (JSON-LD).
+     This is the most important tag on the page for local search.
+     It tells Google directly: this is a food business, here is its
+     name/location/hours/menu, in a format Google can show in rich
+     search results and use for "near me" type queries.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Clark's Crispy Sisig Bagnet",
+  "image": "https://skywilliams001-svg.github.io/clark-crispysisigbagnet/images/hero-bg.jpg",
+  "url": "https://skywilliams001-svg.github.io/clark-crispysisigbagnet/",
+  "servesCuisine": "Filipino",
+  "priceRange": "₱49–₱100",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sitio Tulay, Brgy. Tandang Kutyo",
+    "addressLocality": "Tanay",
+    "addressRegion": "Rizal",
+    "addressCountry": "PH"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "16:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "16:00",
+      "closes": "22:00"
+    }
+  ],
+  "menu": "https://skywilliams001-svg.github.io/clark-crispysisigbagnet/#menu",
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": {
+      "@type": "MenuSection",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Crispy Pork Sisig (Full Order)", "offers": { "@type": "Offer", "price": "100", "priceCurrency": "PHP" } },
+        { "@type": "MenuItem", "name": "Crispy Bagnet", "offers": { "@type": "Offer", "price": "100", "priceCurrency": "PHP" } },
+        { "@type": "MenuItem", "name": "Crispy Sisig with Rice", "offers": { "@type": "Offer", "price": "59", "priceCurrency": "PHP" } },
+        { "@type": "MenuItem", "name": "Tofu Sisig", "offers": { "@type": "Offer", "price": "49", "priceCurrency": "PHP" } }
+      ]
+    }
+  }
+}
+</script>
 
 <!-- ============================================================
      Google Fonts (display: Poppins / body: Inter)

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skywilliams001-svg.github.io/clark-crispysisigbagnet/sitemap.xml
